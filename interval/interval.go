@@ -26,7 +26,7 @@ func Merge(intervals []Interval) []Interval {
 			len(intervals))
 		return intervals
 	case 1:
-		log.Println("Debug: minimum of two intervals required for merging, skipping execution")
+		log.Println("Minimum of two intervals required for merging, skipping execution")
 		return intervals
 	}
 
