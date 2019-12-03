@@ -4,8 +4,8 @@ package interval
 
 import (
 	"fmt"
+	"github.com/schneereich/merge-intervals/intmath"
 	"log"
-	"merge-intervals/intmath"
 	"sort"
 )
 
