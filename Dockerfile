@@ -1,3 +1,3 @@
-FROM scratch
+FROM alpine:latest
 ADD merge-intervals /
 ENTRYPOINT ["/merge-intervals"]
