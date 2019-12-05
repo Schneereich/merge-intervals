@@ -2,3 +2,26 @@ language: go
 
 go:
   - '1.13'
+
+services:
+  - docker
+S
+install:
+  - go build -o merge -v
+
+before_deploy:
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+
+deploy:
+  - provider: script
+    skip_cleanup: true
+    script:
+      docker build --no-cache -t schneereich/merge-intervals:master . ;
+      docker push schneereich/merge-intervals:master
+    on:
+      branch: master
+#  - provider: script
+#    script: rm -rf dist/linux_amd64; curl -sL https://git.io/goreleaser | bash
+#    on:
+#      tags: true
+#      condition: $TRAVIS_OS_NAME = linux
