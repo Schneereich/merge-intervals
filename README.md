@@ -24,7 +24,11 @@ To visit source and to get more details on the algorithm, click:
 ## How to start?
 For instructions how to run the program, have a look at the
 (release notes)[https://github.com/Schneereich/merge-intervals/releases/latest]
+
 Use the Docker container or run the binary.
+```
+ docker run -it --rm schneereich/merge-intervals:latest [25,30] [2,19] [14,23] [4,8]
+```
 ```
 merge-intervals.exe [25,30] [2,19] [14,23] [4,8]
 ```
