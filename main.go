@@ -2,7 +2,8 @@ package main
 
 import (
 	"fmt"
-	"github.com/schneereich/merge-intervals/interval"
+
+	"merge-intervals/interval"
 )
 
 func main() {

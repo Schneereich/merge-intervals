@@ -1,4 +1,4 @@
-package interval
+package main
 
 import "testing"
 
