@@ -21,6 +21,14 @@ Space complexity:
 To visit source and to get more details on the algorithm, click:
 [solution on leetcode.com](https://leetcode.com/problems/merge-intervals/solution/)
 
+## How to start?
+For instructions how to run the program, have a look at the
+(release notes)[https://github.com/Schneereich/merge-intervals/releases/latest]
+Use the Docker container or run the binary.
+```
+merge-intervals.exe [25,30] [2,19] [14,23] [4,8]
+```
+
 ## To Do
 * Use a linked list for the intervals instead of the array and slice objects.
 With very large lists, this should be more efficient. Caution: This seems not to be a standard in Golang.
