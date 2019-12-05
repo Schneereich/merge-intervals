@@ -1,13 +1,13 @@
 // Package interval provides a structure for intervals of integers and merging
 // of overlapping intervals.
-package main
+package interval
 
 import (
 	"fmt"
 	"log"
 	"sort"
 
-	"merge-intervals/intmath"
+	"github.com/Schneereich/merge-intervals/intmath"
 )
 
 type Interval struct {
