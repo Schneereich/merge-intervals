@@ -10,6 +10,7 @@ import (
 	"github.com/Schneereich/merge-intervals/intmath"
 )
 
+// Interval consists of integer values for the Start and End of an interval
 type Interval struct {
 	Start, End int
 }

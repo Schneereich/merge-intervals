@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	intervals := []interval.Interval {
+	intervals := []interval.Interval{
 		{15, 20},
 		{2, 6},
 		{17, 24},
