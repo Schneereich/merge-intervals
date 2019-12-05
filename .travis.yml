@@ -7,7 +7,7 @@ services:
   - docker
 S
 install:
-  - go build -o merge -v
+  - go build -o merge-intervals -v
 
 before_deploy:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
