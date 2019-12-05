@@ -1,0 +1,17 @@
+# Build customization
+builds:
+  - main: .
+    binary: merge-intervals
+    goos:
+      - linux
+      - windows
+    goarch:
+      - amd64
+
+dockers:
+  - goos: linux
+    goarch: amd64
+    goarm: ''
+    image_templates:
+      - 'schneereich/merge-intervals:{{ .Tag }}'
+      - 'schneereich/merge-intervals:latest'
