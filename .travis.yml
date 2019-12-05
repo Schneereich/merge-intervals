@@ -5,7 +5,7 @@ go:
 
 services:
   - docker
-S
+
 install:
   - go build -o merge-intervals -v
 
