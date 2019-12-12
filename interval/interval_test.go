@@ -31,6 +31,18 @@ func TestMerge(t *testing.T) {
 			[]Interval{{0, 1}},
 			[]Interval{{0, 1}},
 		},
+		{
+				[]Interval{{1, 15}, {2, 10}},
+				[]Interval{{1, 15}},
+		},
+		{
+			[]Interval{{1, 15}, {0, 1}, {15, 16}},
+			[]Interval{{0, 16}},
+		},
+		{
+				[]Interval{{0, -1},{2,16}},
+				[]Interval{{-1, 0},{2,16}},
+		},
 	}
 
 	for _, table := range tables {
