@@ -7,4 +7,4 @@ VOLUME /opt/gopath
 WORKDIR /opt/gopath
 ENV GOPATH /opt/gopath
 
-CMD go build github.com/schneereich/merge-intervals
+CMD go build github.com/Schneereich/merge-intervals
