@@ -32,6 +32,13 @@ func Merge(intervals []Interval) []Interval {
 		return intervals
 	}
 
+	// change interval limits to have increasing order
+	for i, interval := range intervals {
+		if interval.Start > interval.End {
+			intervals[i].Start, intervals[i].End = intervals[i].End, intervals[i].Start
+		}
+	}
+
 	// intervals sorted by Start value
 	sort.Slice(intervals, func(i, j int) bool {
 		return intervals[i].Start < intervals[j].Start
