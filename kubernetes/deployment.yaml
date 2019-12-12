@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: merge-intervals
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: merge-intervals
+  template:
+    metadata:
+      labels:
+        app: merge-intervals
+    spec:
+      containers:
+        - name: merge-intervals
+          image: schneereich/merge-intervals:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
