@@ -29,7 +29,7 @@ func main() {
 	log.Println("The following intervals are read from the input:", args)
 
 	// parse interval pairs of the commandline input
-	object, _ := regexp.Compile(`(\[(\d+),(\d+)\])`)
+	object, _ := regexp.Compile(`(\[([-+]?\d+),([-+]?\d+)\])`)
 	matches := object.FindAllStringSubmatch(args, -1)
 	var intervals []interval.Interval
 	for _, match := range matches {
