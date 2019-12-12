@@ -11,5 +11,7 @@ if (-Not (Test-Path env:GOPATH)) {
 }
 
 docker build -t gobuilder .
+$gopath = ($env:GOPATH).replace('\','/')
 Write-Output "start build ..."
-docker run --rm --name=gobuilder -v $env:GOPATH:/opt/gopath gobuilder
+docker run --rm --name=gobuilder -v ${gopath}:/opt/gopath gobuilder `
+    env GOOS=windows GOARCH=amd64 go build github.com/Schneereich/merge-intervals
