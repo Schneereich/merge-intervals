@@ -23,7 +23,7 @@ To visit source and to get more details on the algorithm, click:
 
 ## How to start?
 For instructions how to run the program, have a look at the
-(release notes)[https://github.com/Schneereich/merge-intervals/releases/latest]
+[release notes](https://github.com/Schneereich/merge-intervals/releases/latest)
 
 Use the Docker container or run the binary.
 ```
